@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: pingapp-config-env
+  #name space creado.
+  namespace: arba
+  labels:
+    app: pingapp
+data:
+  CONFIG_LOCATION: /config/config.json
+  DEVELOPER: "Filiberto Martin"
